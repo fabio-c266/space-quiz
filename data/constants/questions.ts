@@ -1,0 +1,201 @@
+import { QuestionModel } from '../model/Question'
+
+const questions: QuestionModel[] = [
+    {
+        id: 1,
+        title: 'Qual é o maior planeta do sistema solar?',
+        options: ['Terra', 'Júpiter', 'Saturno', 'Urano'],
+        answerIndex: 1,
+    },
+    {
+        id: 2,
+        title: 'Quantos planetas existem no sistema solar?',
+        options: ['8', '9', '7', '10'],
+        answerIndex: 0,
+    },
+    {
+        id: 3,
+        title: "Qual planeta é conhecido como o 'Planeta Vermelho'?",
+        options: ['Marte', 'Vênus', 'Júpiter', 'Saturno'],
+        answerIndex: 0,
+    },
+    {
+        id: 4,
+        title: 'Qual planeta é famoso pelos seus anéis?',
+        options: ['Urano', 'Netuno', 'Saturno', 'Júpiter'],
+        answerIndex: 2,
+    },
+    {
+        id: 5,
+        title: 'Qual é o planeta mais frio do sistema solar?',
+        options: ['Netuno', 'Urano', 'Saturno', 'Plutão'],
+        answerIndex: 1,
+    },
+    {
+        id: 6,
+        title: 'Qual planeta é o mais próximo do Sol?',
+        options: ['Terra', 'Mercúrio', 'Vênus', 'Marte'],
+        answerIndex: 1,
+    },
+    {
+        id: 7,
+        title: 'Qual é a maior lua de Saturno?',
+        options: ['Titã', 'Europa', 'Ganimedes', 'Calisto'],
+        answerIndex: 0,
+    },
+    {
+        id: 8,
+        title: 'Qual planeta tem um dia mais longo que seu ano?',
+        options: ['Vênus', 'Mercúrio', 'Marte', 'Netuno'],
+        answerIndex: 0,
+    },
+    {
+        id: 9,
+        title: "Qual planeta é conhecido como o 'gigante gasoso'?",
+        options: ['Júpiter', 'Saturno', 'Netuno', 'Urano'],
+        answerIndex: 0,
+    },
+    {
+        id: 10,
+        title: 'Qual planeta tem a maior montanha do sistema solar?',
+        options: ['Terra', 'Marte', 'Vênus', 'Mercúrio'],
+        answerIndex: 1,
+    },
+    {
+        id: 11,
+        title: 'Qual é o nome da galáxia em que vivemos?',
+        options: ['Via Láctea', 'Andrômeda', 'Triângulo', 'Centaurus A'],
+        answerIndex: 0,
+    },
+    {
+        id: 12,
+        title: 'Quantas luas tem Marte?',
+        options: ['1', '2', '3', '4'],
+        answerIndex: 1,
+    },
+    {
+        id: 13,
+        title: 'Qual é a maior lua do sistema solar?',
+        options: ['Titã', 'Ganimedes', 'Calisto', 'Europa'],
+        answerIndex: 1,
+    },
+    {
+        id: 14,
+        title: 'Qual planeta é conhecido por ter uma grande mancha vermelha?',
+        options: ['Marte', 'Júpiter', 'Saturno', 'Vênus'],
+        answerIndex: 1,
+    },
+    {
+        id: 15,
+        title: 'Qual é o menor planeta do sistema solar?',
+        options: ['Mercúrio', 'Marte', 'Vênus', 'Plutão'],
+        answerIndex: 0,
+    },
+    {
+        id: 16,
+        title: 'Qual é o nome do segundo maior planeta do sistema solar?',
+        options: ['Urano', 'Netuno', 'Saturno', 'Júpiter'],
+        answerIndex: 2,
+    },
+    {
+        id: 17,
+        title: 'Qual é o nome do rover que a NASA enviou a Marte em 2021?',
+        options: ['Curiosity', 'Spirit', 'Opportunity', 'Perseverance'],
+        answerIndex: 3,
+    },
+    {
+        id: 18,
+        title: 'Quantas estrelas existem na Via Láctea?',
+        options: [
+            'Cerca de 100 bilhões',
+            'Cerca de 200 bilhões',
+            'Cerca de 300 bilhões',
+            'Cerca de 400 bilhões',
+        ],
+        answerIndex: 3,
+    },
+    {
+        id: 19,
+        title: 'Qual é a principal composição da atmosfera de Vênus?',
+        options: ['Oxigênio', 'Hidrogênio', 'Nitrogênio', 'Dióxido de carbono'],
+        answerIndex: 3,
+    },
+    {
+        id: 20,
+        title: 'Qual é a estrela mais próxima da Terra depois do Sol?',
+        options: ['Proxima Centauri', 'Betelgeuse', 'Alpha Centauri A', 'Sirius'],
+        answerIndex: 0,
+    },
+    {
+        id: 21,
+        title: 'Qual é a unidade de medida usada para distâncias dentro do sistema solar?',
+        options: ['Anos-luz', 'Parsecs', 'Unidade Astronômica', 'Quilômetros'],
+        answerIndex: 2,
+    },
+    {
+        id: 22,
+        title: 'O que é um buraco negro?',
+        options: [
+            'Uma estrela em colapso',
+            'Um planeta sem atmosfera',
+            'Uma região de espaço-tempo de onde nada pode escapar',
+            'Um tipo de cometa',
+        ],
+        answerIndex: 2,
+    },
+    {
+        id: 23,
+        title: 'Qual planeta tem as maiores variações de temperatura entre o dia e a noite?',
+        options: ['Mercúrio', 'Marte', 'Terra', 'Vênus'],
+        answerIndex: 0,
+    },
+    {
+        id: 24,
+        title: 'Qual é o nome da maior lua de Netuno?',
+        options: ['Titã', 'Europa', 'Tritão', 'Io'],
+        answerIndex: 2,
+    },
+    {
+        id: 25,
+        title: 'Qual planeta tem ventos que podem chegar a 2.100 km/h?',
+        options: ['Júpiter', 'Saturno', 'Netuno', 'Urano'],
+        answerIndex: 2,
+    },
+    {
+        id: 26,
+        title: 'Qual é a principal composição das nuvens de Vênus?',
+        options: ['Água', 'Metano', 'Ácido sulfúrico', 'Amoníaco'],
+        answerIndex: 2,
+    },
+    {
+        id: 27,
+        title: 'Qual é a maior estrutura conhecida no universo?',
+        options: [
+            'Superaglomerado de Hércules',
+            'Grande Muralha de Sloan',
+            'Grande Atrator',
+            'Grande Muralha de Bóotes',
+        ],
+        answerIndex: 1,
+    },
+    {
+        id: 28,
+        title: 'Qual planeta tem um sistema de anéis mais complexo?',
+        options: ['Júpiter', 'Urano', 'Netuno', 'Saturno'],
+        answerIndex: 3,
+    },
+    {
+        id: 29,
+        title: 'Qual foi o primeiro satélite artificial lançado ao espaço?',
+        options: ['Sputnik 1', 'Explorer 1', 'Vanguard 1', 'Luna 1'],
+        answerIndex: 0,
+    },
+    {
+        id: 30,
+        title: 'Qual é o tempo de rotação da Terra em torno de seu eixo?',
+        options: ['24 horas', '23 horas e 56 minutos', '24 horas e 30 minutos', '23 horas'],
+        answerIndex: 1,
+    },
+]
+
+export default questions;
