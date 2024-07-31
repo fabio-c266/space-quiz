@@ -12,7 +12,8 @@ export default function Index() {
     currentQuizQuestionIndex,
     isDoneQuiz,
     points,
-    startQuiz
+    startQuiz,
+    setQuestionUserAnswer
   } = useQuestion();
 
   useEffect(() => {
@@ -31,7 +32,10 @@ export default function Index() {
         {isDoneQuiz ? (
           <Result points={points} restartQuiz={startQuiz} questionsAmount={quizQuestions.length} />
         ) : (
-          <Question question={quizQuestions[currentQuizQuestionIndex]} />
+          <Question
+            question={quizQuestions[currentQuizQuestionIndex]}
+            setQuestionUserAnswer={setQuestionUserAnswer}
+          />
         )}
 
       </View>

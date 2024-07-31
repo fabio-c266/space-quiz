@@ -4,11 +4,13 @@ import { QuestionTitle } from "./QuestionTitle"
 import { QuestionOption } from "./QuestionOption"
 
 type QuestionProps = {
-    question: QuestionModel
+    question: QuestionModel,
+    setQuestionUserAnswer: (index: number) => void;
 }
 
 export function Question({
-    question
+    question,
+    setQuestionUserAnswer
 }: QuestionProps) {
     return (
         <View style={
@@ -27,7 +29,7 @@ export function Question({
                         key={index}
                         index={index}
                         text={option}
-                        onPress={() => console.log('Option pressurized')}
+                        onPress={() => setQuestionUserAnswer(index)}
                     />
                 })}
             </View>

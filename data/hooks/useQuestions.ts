@@ -17,12 +17,28 @@ export function useQuestion() {
         setCurrentQuizQuestionIndex(0)
     }
 
+    function setQuestionUserAnswer(asnwerIndex: number) {
+        const currentQuestion = quizQuestions[currentQuizQuestionIndex]
+
+        if (currentQuestion.answerIndex === asnwerIndex) {
+            setPoints(points + 1)
+        }
+
+        if ((quizQuestions.length - 1) === currentQuizQuestionIndex) {
+            setIsDoneQuiz(true)
+            return;
+        }
+
+        setCurrentQuizQuestionIndex(currentQuizQuestionIndex + 1)
+    }
+
     return {
         startQuiz,
         isDoneQuiz,
         setIsDoneQuiz,
         points,
         quizQuestions,
-        currentQuizQuestionIndex
+        currentQuizQuestionIndex,
+        setQuestionUserAnswer
     }
 }
